@@ -1,6 +1,6 @@
 // SkillsPage
 import React, { useState, useEffect } from "react";
-import { skillsData } from "../data/skill";
+import { skill } from "../data/skill";
 import SectionHeader from "../components/SectionHeader";
 import SkillCard from "../components/skills/SkillCard";
 
@@ -9,7 +9,7 @@ const SkillsPage: React.FC = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSkillIndex((prev) => (prev + 1) % skillsData.length);
+      setCurrentSkillIndex((prev) => (prev + 1) % skill.length);
     }, 3000);
     return () => clearInterval(timer);
   }, []);
@@ -22,7 +22,7 @@ const SkillsPage: React.FC = () => {
           subtitle="Passionate about creating exceptional web experiences with modern technologies"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillsData.map((skill, index) => (
+          {skill.map((skill, index) => (
             <SkillCard
               key={skill.name}
               skill={skill}
