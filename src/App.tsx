@@ -3,6 +3,7 @@ import HomePage  from './pages/HomePage';
 import SkillsPage from './pages/SkillsPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
 // Make sure these paths and files exist, or adjust accordingly:
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
@@ -21,6 +22,8 @@ const App: React.FC = () => {
         return <ProjectsPage />;
       case 'contact':
         return <ContactPage />;
+      case 'about':
+        return <AboutPage />;
       default:
         return <HomePage onNavigate={setCurrentPage} />;
     }

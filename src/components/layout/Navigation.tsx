@@ -78,6 +78,13 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onNavigate }) => {
               >
                 Contact
               </NavLink>
+              <NavLink
+                href="about"
+                active={currentPage === "about"}
+                onClick={() => handleNavigation("about")}
+                >
+                About
+                </NavLink>
             </div>
           </div>
 
@@ -128,6 +135,13 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onNavigate }) => {
             >
               Contact
             </NavLink>
+            <NavLink
+              href="about"
+              active={currentPage === "about"}
+              onClick={() => handleNavigation("about")} 
+              >
+              About
+              </NavLink>
           </div>
         </div>
       )}
