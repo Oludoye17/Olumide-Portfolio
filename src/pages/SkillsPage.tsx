@@ -1,6 +1,6 @@
 // SkillsPage
 import React, { useState, useEffect } from "react";
-import { skillsData } from "../data/skillsData";
+import { skillsData } from "../data/skill";
 import SectionHeader from "../components/SectionHeader";
 import SkillCard from "../components/skills/SkillCard";
 

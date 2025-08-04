@@ -10,13 +10,7 @@ interface NavLinkProps {
   children: React.ReactNode;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({
-    href,
-  
-  active,
-  onClick,
-  children,
-}) => (
+const NavLink: React.FC<NavLinkProps> = ({ active, onClick, children }) => (
   <button
     onClick={onClick}
     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${

@@ -1,6 +1,6 @@
 // skillsData export
 
-export const skillsData = [
+export const skill = [
   {
     name: "React",
     level: "Advanced",

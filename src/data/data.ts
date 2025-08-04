@@ -1,1 +1,0 @@
-import { skillsData } from '../data';
