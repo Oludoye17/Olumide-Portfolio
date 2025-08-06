@@ -6,6 +6,8 @@ import ContactInfo from '../components/ContactInfo';
 import SocialLink from '../components/SocialLink';
 import Button from '../components/Button';
 import { useForm } from '../hooks/useForm';
+import { SiGithub, SiGitter, SiLinkedin } from 'react-icons/si';
+import { Fa6, FaXTwitter } from 'react-icons/fa6';
 
 const ContactPage: React.FC = () => {
   const { formData, handleChange, handleSubmit } = useForm({
@@ -39,10 +41,10 @@ const ContactPage: React.FC = () => {
               title="Location"
               info="Nigeria"
             />
-            <div className="flex space-x-4 mt-8">
-              <SocialLink icon={<Github className="w-5 h-5 text-white" />} href="#" />
-              <SocialLink icon={<Linkedin className="w-5 h-5 text-white" />} href="#" />
-              <SocialLink icon={<Twitter className="w-5 h-5 text-white" />} href="#" />
+            <div className="flex space-x-4 mt-8 text-white">
+               <SocialLink icon={<SiGithub className="w-6 h-6" />} href="https://github.com/Oludoye17" />
+                      <SocialLink icon={<SiLinkedin className="w-6 h-6" />} href="https://www.linkedin.com/in/oludoye-olumide" />
+                      <SocialLink icon={<FaXTwitter className="w-6 h-6" />} href="https://x.com/OlumideOludoye" />
             </div>
           </div>
 

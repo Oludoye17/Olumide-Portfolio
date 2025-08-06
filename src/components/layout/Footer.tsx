@@ -1,5 +1,6 @@
 // Footer Component
 // src/components/Footer.tsx
+import { FaXTwitter } from "react-icons/fa6";
 import { SiGithub, SiLinkedin, SiGitter } from "react-icons/si";
 
 interface SocialLinkProps {
@@ -23,9 +24,9 @@ const Footer: React.FC = () => (
     <div className="max-w-7xl mx-auto px-4">
       <p className="text-gray-400 mb-4">Follow me on social media:</p>
       <div className="flex justify-center space-x-6 mb-4">
-        <SocialLink icon={<SiGithub className="w-6 h-6" />} href="https://github.com/yourusername" />
-        <SocialLink icon={<SiLinkedin className="w-6 h-6" />} href="https://linkedin.com/in/yourusername" />
-        <SocialLink icon={<SiGitter className="w-6 h-6" />} href="https://gitter.im/yourusername" />
+        <SocialLink icon={<SiGithub className="w-6 h-6" />} href="https://github.com/Oludoye17" />
+        <SocialLink icon={<SiLinkedin className="w-6 h-6" />} href="https://www.linkedin.com/in/oludoye-olumide" />
+        <SocialLink icon={<FaXTwitter className="w-6 h-6" />} href="https://x.com/OlumideOludoye" />
       </div>
       <p className="text-gray-500">© 2024 Oludoye Olumide. All rights reserved.</p>
     </div>
